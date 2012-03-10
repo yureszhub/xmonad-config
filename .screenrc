@@ -1,0 +1,2 @@
+backtick 1 60 60 $HOME/bin/random_todo.py
+hardstatus alwayslastline "[ %1` ]"
