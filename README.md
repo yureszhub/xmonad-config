@@ -13,6 +13,6 @@ menos de 20 minutos.
 
 
 ##Pantallazos
-[xmonad al inicio](/benalb/xmonad-config/raw/master/images/clean.png)
+![xmonad al inicio](/benalb/xmonad-config/raw/master/images/clean.png)
 
-[xmonad en acción](/benalb/xmonad-config/raw/master/images/xvt.png)
+![xmonad en acción](/benalb/xmonad-config/raw/master/images/xvt.png)
