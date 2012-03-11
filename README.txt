@@ -15,6 +15,7 @@ mínima de debian:
     * xinit
     * suckless-tools
     * gmrun
+    * links2
     * consolekit (¿seguro?)
     * ...
     * el resto de paquetes.
