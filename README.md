@@ -16,6 +16,17 @@ tmux gmrun git links2 vim
 </pre>
 y apt se ocupará de todas las dependencias.
 
+Después, ya como usuario, hacemos:
+<pre>
+user@debian $ git clone git://github.com/benalb/xmonad-config.git
+</pre>
+y creamos los enlaces pertinentes. Ahora ya sólo queda ejecutar como
+usuario:
+<pre>
+user@debian $ startx
+</pre>
+
+
 ##Pantallazos
 ![xmonad al inicio](/benalb/xmonad-config/raw/master/images/clean.png)
 
