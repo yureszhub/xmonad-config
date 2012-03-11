@@ -13,7 +13,9 @@ mínima de debian:
     * libghc-xmonad-contrib-dev
     * rxvt-unicode
     * xinit
+    * suckless-tools
     * gmrun
+    * consolekit (¿seguro?)
     * ...
     * el resto de paquetes.
 
@@ -24,4 +26,5 @@ TODO:
     * convertir el readme.txt a markdown
     * llenar de contenido el Readme.md
     * urgency hooks
+    * ocultar NSP de xmobar cuando no se use el scratchpad
     * crear un screencast
