@@ -7,4 +7,4 @@ xsetroot -cursor_name left_ptr &
 #xcompmgr -c -t-5 -l-5 -r4.2 -o.25 &
 sh $HOME/.fehbg &
 $HOME/.dropbox-dist/dropboxd &
-exec ck-launch-session xmonad
+exec xmonad
