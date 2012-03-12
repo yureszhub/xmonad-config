@@ -4,6 +4,6 @@ xterm*faceSize:          14
 URxvt*font:              xft:inconsolata:pixelsize=20
 URxvt*shading:          15
 URxvt*scrollBar:        false
-URxvt*background:  #000000
-URxvt*foreground:  #A8A8A8
+URxvt*background:       #000000
+URxvt*foreground:       #A8A8A8
 URxvt*inheritPixmap:    true

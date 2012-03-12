@@ -111,7 +111,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm, xK_s), SM.submap $ searchEngineMap $ S.promptSearch P.defaultXPConfig)
     , ((modm .|. shiftMask, xK_s), SM.submap $ searchEngineMap $ S.selectSearch)
     -- aumenta el número de ventanas en el área maestra
-    , ((modm, xK_comma), sendMessage (IncMasterN 1))
+  , ((modm, xK_comma), sendMessage (IncMasterN 1))
     -- reduce el número de ventanas en el área maestra
     , ((modm, xK_period), sendMessage (IncMasterN (-1)))
     -- cambia el hueco de la barra de estado
