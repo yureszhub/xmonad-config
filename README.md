@@ -12,7 +12,7 @@ Debian stable básica recien instalada. Como root hacemos:
 <pre>
 root@debian # apt-get install xmonad x11-xserver-utils xmobar trayer 
 feh numlockx libghc-xmonad-contrib-dev rxvt-unicode xinit suckless-tools 
-tmux gmrun git links2 vim
+tmux gmrun i3lock git links2 vim
 </pre>
 y apt se ocupará de todas las dependencias.
 
