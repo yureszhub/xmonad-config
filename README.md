@@ -26,6 +26,34 @@ usuario:
 user@debian $ startx
 </pre>
 
+##Atajos de teclado
+<pre>
+shift-alt-l         lanza el salvapantallas
+alt-right           espacio de trabajo siguiente
+alt-left            espacio de trabajo anterior
+alt-up              subir el volumen de sonido
+alt-down            bajar el volumen de sonido
+shift-alt-enter     lanzar una terminal
+alt-p               lanzar dmenu
+shift-alt-p         lanzar gmrun
+shfit-alt-c         cierra la ventana actual
+alt-space           va rotando entre los distintos algoritmos de distribución 
+shift-alt-space     reinicia el esquema del espacio de trabajo actual al por defecto
+alt-n               cambia las ventanas al tamaño correcto
+alt-tab             mueve el foco a la ventana siguiente
+alt-j               mueve el foco a la ventana anterior
+alt-k               mueve el foco a la ventana anterior
+alt-m               mueve el foco a la ventana maestra
+alt-enter           convierte la ventana con foco en la ventana maestra
+shift-alt-j         cambia el foco con la ventana siguiente
+shift-alt-k         cambia el foco con la ventana anterior
+alt-h               encoge el área maestra
+alt-l               estira el área maestra
+alt-t               devuelve una venta flotante al esquema en uso 
+alt-q               salir de xmonad
+shift-alt-q         reiniciar xmonad
+alt-g               scratchpad
+</pre>
 
 ##Pantallazos
 ![xmonad al inicio](/benalb/xmonad-config/raw/master/images/clean.png)
