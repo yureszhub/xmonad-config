@@ -47,7 +47,7 @@ myFocusedBorderColor = "gray"
 
 myLayout = avoidStruts $  
             onWorkspace "web" Full $
-            onWorkspace "honeypot" tiled $ 
+            onWorkspace "WM" tiled $ 
             onWorkspace "irc" onebig $ 
             onWorkspace "share" onebig $ 
             standardLayout
