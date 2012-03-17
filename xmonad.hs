@@ -8,6 +8,7 @@ import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.FadeInactive
 import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.Scratchpad
+import XMonad.Util.NamedScratchpad
 import XMonad.Actions.CycleWS
 import XMonad.ManageHook
 import XMonad.Layout.Magnifier
@@ -29,6 +30,7 @@ main = do
             { ppOutput = hPutStrLn xmproc
             , ppTitle = xmobarColor "gray" "" . shorten 50
             , ppOrder = \(ws:_:t:_) -> [ws, t]
+            , ppSort  = fmap (namedScratchpadFilterOutWorkspace.) (ppSort xmobarPP) -- hide NSP from the workspace list
             }
         , terminal    = myTerminal
         , modMask     = myModMask
