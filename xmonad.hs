@@ -157,6 +157,6 @@ manageScratchPad :: ManageHook
 manageScratchPad = scratchpadManageHook (W.RationalRect l t w h)
     where
         h = 0.6
-        w = 0.5
+        w = 0.6
         t = 1 - h
         l = 1 - w
