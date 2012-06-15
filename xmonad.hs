@@ -13,6 +13,7 @@ import XMonad.Actions.CycleWS
 import XMonad.ManageHook
 import XMonad.Layout.Magnifier
 import XMonad.Layout.PerWorkspace
+import XMonad.Layout.NoBorders
 import XMonad.Layout.OneBig
 import System.IO
 import qualified XMonad.Prompt         as P
@@ -25,7 +26,7 @@ main = do
     xmonad $ defaultConfig
         { manageHook = manageDocks <+> myManageHook <+> manageScratchPad 
         <+> manageHook defaultConfig
-        , layoutHook = myLayout
+        , layoutHook = smartBorders $ myLayout
         , logHook = dynamicLogWithPP  xmobarPP
             { ppOutput = hPutStrLn xmproc
             , ppTitle = xmobarColor "gray" "" . shorten 50
