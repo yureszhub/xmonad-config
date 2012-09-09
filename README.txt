@@ -6,3 +6,4 @@ TODO:
     * http://translate.google.com/#en|es|<palabra>  <-- añadir a searchs
     * script de instalación ( python o bash? decisiones, decisiones)
     * crear un screencast
+    * añadir scripts wunder* e instalar dzen2
