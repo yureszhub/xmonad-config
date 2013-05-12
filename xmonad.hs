@@ -133,6 +133,7 @@ searchEngineMap method = M.fromList $
       [ ((0, xK_g), method S.google)
       , ((0, xK_w), method S.wikipedia)
       , ((0, xK_p), method $ S.searchEngine "pirate" "https://thepiratebay.se/search/")
+      , ((0, xK_d), method $ S.searchEngine "duckduckgo" "https://duckduckgo.com/?q=")
       ]
 
 myWorkSpaces = ["code", "web", "VM", "irc", "share"] ++ map show [6..9]
