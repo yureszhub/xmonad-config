@@ -7,3 +7,4 @@ URxvt*scrollBar:        false
 URxvt*background:       #000000
 URxvt*foreground:       #A8A8A8
 URxvt*inheritPixmap:    true
+URxvt.urgentOnBell:     true
