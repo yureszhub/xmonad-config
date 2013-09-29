@@ -3,6 +3,7 @@ import XMonad
 import System.Exit
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
+import XMonad.Hooks.UrgencyHook
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.FadeInactive
@@ -23,7 +24,8 @@ import qualified XMonad.Actions.Search as S
 
 main = do
     xmproc <- spawnPipe "/usr/bin/xmobar ~/.xmobarrc"
-    xmonad $ defaultConfig
+    xmonad  $ withUrgencyHook dzenUrgencyHook { args = ["-bg", "darkgreen", "-xs", "1"] }
+            $ defaultConfig
         { manageHook = manageDocks <+> myManageHook <+> manageScratchPad 
         <+> manageHook defaultConfig
         , layoutHook = smartBorders $ myLayout
