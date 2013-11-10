@@ -116,7 +116,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm, xK_s), SM.submap $ searchEngineMap $ S.promptSearch P.defaultXPConfig)
     , ((modm .|. shiftMask, xK_s), SM.submap $ searchEngineMap $ S.selectSearch)
     -- aumenta el número de ventanas en el área maestra
-  , ((modm, xK_comma), sendMessage (IncMasterN 1))
+    , ((modm, xK_comma), sendMessage (IncMasterN 1))
     -- reduce el número de ventanas en el área maestra
     , ((modm, xK_period), sendMessage (IncMasterN (-1)))
     -- cambia el hueco de la barra de estado
@@ -125,6 +125,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. shiftMask, xK_q), io (exitWith ExitSuccess))
     -- reiniciar xmonad
     , ((modm, xK_q), spawn "xmonad --recompile; xmonad --restart")
+    -- Prueba de traducción del texto seleccionado
+    , ((modm .|. shiftMask, xK_w), safePromptSelection "~/bin/transmonad.sh")
     -- scratchpad
     , ((modm, xK_g), scratchPad)
     ]
