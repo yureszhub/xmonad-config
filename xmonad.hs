@@ -125,8 +125,10 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. shiftMask, xK_q), io (exitWith ExitSuccess))
     -- reiniciar xmonad
     , ((modm, xK_q), spawn "xmonad --recompile; xmonad --restart")
-    -- Prueba de traducción del texto seleccionado
+    -- Traducción del texto seleccionado
     , ((modm .|. shiftMask, xK_w), safePromptSelection "~/bin/transmonad.sh")
+     -- Envío de enlace a navegador
+    , ((modm .|. shiftMask, xK_l), safePromptSelection "x-www-browser")
     -- scratchpad
     , ((modm, xK_g), scratchPad)
     ]
