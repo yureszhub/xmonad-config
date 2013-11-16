@@ -69,7 +69,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
         , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]]
     ++
     -- lanza el salvapantallas (i3lock)
-    [ ((modm .|. shiftMask, xK_l), spawn "i3lock -c 000000")
+    [ ((modm .|. shiftMask, xK_x), spawn "i3lock -c 000000")
     -- espacio de trabajo siguiente
     , ((modm, xK_Right), nextWS)
     -- espacio de trabajo anterior
